@@ -80,6 +80,7 @@ a{
   width: 100%;
   color: white;
   text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+  a{border-bottom: 1px solid white;&:hover{border-bottom-color: $primary; color: white;}}
 }
 
 .pace {
@@ -93,6 +94,31 @@ a{
 
 .pace-inactive {
   display: none;
+}
+
+.start-block{
+  p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px !important;
+    i{
+      margin-right: 5px;
+      color: black;
+    }
+  }
+  $list-margin-default: 15px;
+  .secondary{
+    margin-left: $list-margin-default;
+    i{
+      color: $primary;
+    }
+  }
+  .thirdry{
+    margin-left: $list-margin-default * 2;
+    i{
+      color: lighten($black, 30%);
+    }
+  }
 }
 
 .pace .pace-progress {
